@@ -1,0 +1,9 @@
+1st-spData
+node_modules
+node_modules/
+src/css/generated
+src/css/generated/
+build
+package-lock.json
+.DS_Store
+README.md
