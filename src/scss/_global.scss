@@ -1,0 +1,176 @@
+/**
+ * Global
+ */
+
+html, body {
+	// minimum size
+	font-size: $text-bp-min;
+	font-family: $primaryFont;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	background-color: $primaryColor;
+	color: $navbarTextColor;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	@include bp-small {		// mobile size
+		font-size: vw($text-bp-sm,$screen-bp-sm);
+	}
+	
+	@include bp-medium {	// tablet size
+		font-size: vw($text-bp-md,$screen-bp-md);
+	}
+	
+	@include bp-large {		// desktop size
+		font-size: vw($text-bp-lg,$screen-bp-lg);
+	}
+	
+	@include bp-xlarge {	// maximum size
+		font-size: $text-bp-lg;
+	}
+}
+::-webkit-scrollbar {
+	display: none;	
+}
+#mainPage {
+	top: 0;
+	left: 0;
+}
+#penguinsPage {
+	display: none;
+	background-color: $penguinPageColor;
+	color: $secondaryColor;
+	top: 0;
+	left: 100%;
+}
+#workPage {
+	display: none;
+	background-color: $workPageColor;
+	top: 0;
+	left: 200%;
+}
+.table {
+	display: table;
+	height: 40px;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.container {
+	height: 100%;
+	width: 100%;
+}
+.row.navbar {
+	margin-top: 2%;
+}
+.navUnit {
+	height: 40px;
+}
+.spLogo {
+	display: block;
+	position: fixed;
+	text-align: left;
+	width: 40px;
+	height: 40px;
+	margin-left: 3%;
+}
+.navObject {
+	width: 33%;
+	text-align: center;
+
+	a {
+		display: inline;
+		color: $navbarTextColor;
+		margin: auto;
+		text-decoration: none;
+	}
+}
+.contactImage {
+	display: block;
+	position: fixed;
+	text-align: right;
+	float: right;
+	height: 40px;
+	width: 80px;
+	margin-left: 23%;
+    margin-right: 3%;
+}
+.homeCenterImage {
+	display: block;
+	position: absolute;
+	width: 500px;
+	height: 390px;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
+.page {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.centeredText {
+	display: block;
+	position: relative;
+	text-align: center;
+	width: 30%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.miniTitle {
+		color: #C3F000;
+		font-size: 16px;
+	}
+	.sectionTitle {
+		font-size: 28px;
+		line-height: 120%;
+
+		.recentWork {
+			font-size: 40px;
+		}
+	}
+	.pageDescription {
+		font-size: 12px;
+	}
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+	.row {
+		margin-bottom: 1%;
+	}
+}
+#copyrightFooter {
+	text-align: left;
+	margin-left: 10%;
+	height: 15px;
+	font-size: 12px;
+	font-weight: lighter;
+}
+.scrollDown {
+	display: block;
+	position: relative;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	top: 100%;
+	left: 50%;
+	transform: translate(-100%, -50%);
+}
+.socialFooter {
+	display: block;
+	float: right;
+	text-align: right;
+	padding-right: 6%;
+}
+i.fa {
+	padding-left: 10px;
+}
